@@ -1,0 +1,31 @@
+/usr/bin/gcc -o obj/run.o -c --std=c99 ./src/run.c 
+./src/run.c: In function ‘main’:
+./src/run.c:201:4: warning: passing argument 2 of ‘random_input’ from incompatible pointer type [enabled by default]
+    random_input(original_data, rnd3,fp_plaintext_txt, TXT_file, BLK_NUMBER, BLK_LENGTH);
+    ^
+In file included from ./src/run.c:16:0:
+./src/../include/input.h:16:6: note: expected ‘const unsigned char **’ but argument is of type ‘unsigned char **’
+ void random_input(uchar **input, const uchar **rnd,FILE *data_i, bool file_type, int number, int arr_length);
+      ^
+./src/run.c:221:5: warning: passing argument 2 of ‘only_plaintext’ from incompatible pointer type [enabled by default]
+     only_plaintext(ciper_data, original_data, BLK_NUMBER,BLK_LENGTH, fp_cipher_txt,TXT_file);
+     ^
+In file included from ./src/run.c:23:0:
+./src/../include/cipher.h:18:6: note: expected ‘const unsigned char **’ but argument is of type ‘unsigned char **’
+ void only_plaintext(uchar **dst, const uchar **src, int number, int arr_length, FILE *cipher_o,bool file_type);
+      ^
+./src/run.c:229:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+    uint addr_ciphertext = (uint) ciper_data;
+                           ^
+./src/run.c:255:21: error: ‘fp_nonce_input_txt’ undeclared (first use in this function)
+    write_txt_1array(fp_nonce_input_txt,16,CETD_nonce_input);
+                     ^
+./src/run.c:255:21: note: each undeclared identifier is reported only once for each function it appears in
+./src/run.c:263:5: warning: passing argument 1 of ‘CETD_tag_generation’ from incompatible pointer type [enabled by default]
+     CETD_tag_generation(ciper_data, CETD_nonce_input,  ctx, r, s,  fp_x_blk_txt,fp_y1_txt, fp_y2_txt,fp_tag_CETD_txt, TXT_file);
+     ^
+In file included from ./src/run.c:19:0:
+./src/../include/CETD.h:20:6: note: expected ‘const unsigned char **’ but argument is of type ‘unsigned char **’
+ void CETD_tag_generation(const uchar **data, uchar *nonce_input,  aes_context a_ctx,int r, int s,  FILE *x,FILE *y1[Y_NUMBER], FILE *y2[Y_NUMBER], FILE *CETD_tag, bool file_type);
+      ^
+make: *** [obj/run.o] Error 1

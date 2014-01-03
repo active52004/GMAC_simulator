@@ -1,0 +1,5 @@
+File I/O notes:
+	1.If all the c files are stored in src/, the header file should be included in the following way
+	#include "../include/header.h"
+	2. if the csv files are stored in data/subdir/, the dir should be defined in c or header files in the following ways:
+	#define dir "data/a/b.csv"

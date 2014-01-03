@@ -1,0 +1,220 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AES_DECRYPT	include/aes.h	55;"	d
+AES_ENCRYPT	include/aes.h	54;"	d
+AES_FROUND	src/aes.c	619;"	d	file:
+AES_RROUND	src/aes.c	642;"	d	file:
+BLK_LENGTH	include/config.h	18;"	d
+BLK_NUMBER	include/config.h	17;"	d
+B_dir	include/GMAC.h	18;"	d
+B_dir_txt	include/GMAC.h	22;"	d
+CC	makefile	/^CC = \/usr\/bin\/gcc$/;"	m
+CETD_internal_cipher_h	include/cipher.h	10;"	d
+CETD_internal_input_h	include/input.h	10;"	d
+CSV_file	include/config.h	19;"	d
+FSb	src/aes.c	/^static const unsigned char FSb[256] =$/;"	v	file:
+FSb	src/aes.c	/^static unsigned char FSb[256];$/;"	v	file:
+FT	src/aes.c	114;"	d	file:
+FT	src/aes.c	197;"	d	file:
+FT0	src/aes.c	/^static const uint32_t FT0[256] = { FT };$/;"	v	file:
+FT0	src/aes.c	/^static uint32_t FT0[256]; $/;"	v	file:
+FT1	src/aes.c	/^static const uint32_t FT1[256] = { FT };$/;"	v	file:
+FT1	src/aes.c	/^static uint32_t FT1[256]; $/;"	v	file:
+FT2	src/aes.c	/^static const uint32_t FT2[256] = { FT };$/;"	v	file:
+FT2	src/aes.c	/^static uint32_t FT2[256]; $/;"	v	file:
+FT3	src/aes.c	/^static const uint32_t FT3[256] = { FT };$/;"	v	file:
+FT3	src/aes.c	/^static uint32_t FT3[256]; $/;"	v	file:
+GCCFLAGS	makefile	/^GCCFLAGS = -c -Wall -g --std=c99$/;"	m
+GCM_DECRYPT	include/gcm.h	22;"	d
+GCM_ENCRYPT	include/gcm.h	21;"	d
+GCM_config_h	include/config.h	10;"	d
+GET_UINT32_BE	src/gcm.c	17;"	d	file:
+GET_UINT32_LE	src/aes.c	47;"	d	file:
+GMAC_BLK_NUMBER	include/GMAC.h	12;"	d
+GMAC_generator	src/GMAC.c	/^void GMAC_generator(uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac_y[GMAC_BLK_NUMBER], FILE *gmac_b, FILE *gmac_tag,bool file_type)$/;"	f
+HH	include/gcm.h	/^    uint64_t HH[16];            \/*!< Precalculated HTable *\/$/;"	m	struct:__anon2
+HH	include/gcm.h	/^    uint64_t HH[16];            \/*!< Precalculated HTable *\/$/;"	m	struct:__anon4
+HL	include/gcm.h	/^    uint64_t HL[16];            \/*!< Precalculated HTable *\/$/;"	m	struct:__anon2
+HL	include/gcm.h	/^    uint64_t HL[16];            \/*!< Precalculated HTable *\/$/;"	m	struct:__anon4
+INPUT_LENGTH	include/GMAC.h	14;"	d
+IV_LENGTH	include/GMAC.h	13;"	d
+LC_BOUND	src/input.c	19;"	d	file:
+MAX_TESTS	src/gcm.c	451;"	d	file:
+MUL	src/aes.c	366;"	d	file:
+OBJ	makefile	/^OBJ = $(OBJDIR)\/run.o \\$/;"	m
+OBJDIR	makefile	/^OBJDIR = $(ROOTDIR)\/obj$/;"	m
+PADLOCK_ACE	include/padlock.h	49;"	d
+PADLOCK_ALIGN16	include/padlock.h	53;"	d
+PADLOCK_PHE	include/padlock.h	50;"	d
+PADLOCK_PMM	include/padlock.h	51;"	d
+PADLOCK_RNG	include/padlock.h	48;"	d
+PERIODIC	src/cipher.c	15;"	d	file:
+PERIODIC	src/input.c	17;"	d	file:
+POLARSSL_AES_C	include/config.h	48;"	d
+POLARSSL_AES_H	include/aes.h	28;"	d
+POLARSSL_CIPHER_MODE_CFB	include/aes.h	36;"	d
+POLARSSL_CIPHER_MODE_CTR	include/aes.h	43;"	d
+POLARSSL_ERR_AES_INVALID_INPUT_LENGTH	include/aes.h	58;"	d
+POLARSSL_ERR_AES_INVALID_KEY_LENGTH	include/aes.h	57;"	d
+POLARSSL_ERR_GCM_AUTH_FAILED	include/gcm.h	24;"	d
+POLARSSL_ERR_GCM_BAD_INPUT	include/gcm.h	25;"	d
+POLARSSL_ERR_PADLOCK_DATA_MISALIGNED	include/padlock.h	32;"	d
+POLARSSL_GCM_C	include/config.h	74;"	d
+POLARSSL_GCM_H	include/gcm.h	8;"	d
+POLARSSL_HAVE_X86	include/padlock.h	37;"	d
+POLARSSL_PADLOCK_C	include/config.h	59;"	d
+POLARSSL_PADLOCK_H	include/padlock.h	28;"	d
+POLARSSL_SELF_TEST	include/config.h	80;"	d
+PUT_UINT32_BE	src/gcm.c	27;"	d	file:
+PUT_UINT32_LE	src/aes.c	57;"	d	file:
+RCON	src/aes.c	/^static const uint32_t RCON[10] =$/;"	v	file:
+RCON	src/aes.c	/^static uint32_t RCON[10];$/;"	v	file:
+ROOTDIR	makefile	/^ROOTDIR = .$/;"	m
+ROTL8	src/aes.c	364;"	d	file:
+RSb	src/aes.c	/^static const unsigned char RSb[256] =$/;"	v	file:
+RSb	src/aes.c	/^static unsigned char RSb[256];$/;"	v	file:
+RT	src/aes.c	241;"	d	file:
+RT	src/aes.c	324;"	d	file:
+RT0	src/aes.c	/^static const uint32_t RT0[256] = { RT };$/;"	v	file:
+RT0	src/aes.c	/^static uint32_t RT0[256];$/;"	v	file:
+RT1	src/aes.c	/^static const uint32_t RT1[256] = { RT };$/;"	v	file:
+RT1	src/aes.c	/^static uint32_t RT1[256];$/;"	v	file:
+RT2	src/aes.c	/^static const uint32_t RT2[256] = { RT };$/;"	v	file:
+RT2	src/aes.c	/^static uint32_t RT2[256];$/;"	v	file:
+RT3	src/aes.c	/^static const uint32_t RT3[256] = { RT };$/;"	v	file:
+RT3	src/aes.c	/^static uint32_t RT3[256];$/;"	v	file:
+SRCDIR	makefile	/^SRCDIR = $(ROOTDIR)\/src$/;"	m
+TAG_LENGTH	include/config.h	22;"	d
+TAG_SIZE	include/GMAC.h	15;"	d
+TXT_file	include/config.h	20;"	d
+V	src/aes.c	181;"	d	file:
+V	src/aes.c	183;"	d	file:
+V	src/aes.c	185;"	d	file:
+V	src/aes.c	187;"	d	file:
+V	src/aes.c	189;"	d	file:
+V	src/aes.c	191;"	d	file:
+V	src/aes.c	193;"	d	file:
+V	src/aes.c	195;"	d	file:
+V	src/aes.c	308;"	d	file:
+V	src/aes.c	310;"	d	file:
+V	src/aes.c	312;"	d	file:
+V	src/aes.c	314;"	d	file:
+V	src/aes.c	316;"	d	file:
+V	src/aes.c	318;"	d	file:
+V	src/aes.c	320;"	d	file:
+V	src/aes.c	322;"	d	file:
+VPATH	makefile	/^VPATH = src:obj:include $/;"	m
+XTIME	src/aes.c	365;"	d	file:
+X_generation_show_h	include/show.h	10;"	d
+a	mod.py	/^a = 1%4$/;"	v
+add_index	src/gcm.c	/^int add_index[MAX_TESTS] =$/;"	v
+add_len	src/gcm.c	/^size_t add_len[MAX_TESTS] =$/;"	v
+additional	src/gcm.c	/^unsigned char additional[MAX_TESTS][64] =$/;"	v
+aes_context	include/aes.h	/^aes_context;$/;"	t	typeref:struct:__anon1
+aes_context	include/aes.h	/^aes_context;$/;"	t	typeref:struct:__anon3
+aes_crypt_cbc	src/aes.c	/^int aes_crypt_cbc( aes_context *ctx,$/;"	f
+aes_crypt_cfb128	src/aes.c	/^int aes_crypt_cfb128( aes_context *ctx,$/;"	f
+aes_crypt_ctr	src/aes.c	/^int aes_crypt_ctr( aes_context *ctx,$/;"	f
+aes_crypt_ecb	src/aes.c	/^int aes_crypt_ecb( aes_context *ctx,$/;"	f
+aes_ctx	include/gcm.h	/^	aes_context aes_ctx;$/;"	m	struct:__anon2
+aes_ctx	include/gcm.h	/^	aes_context aes_ctx;$/;"	m	struct:__anon4
+aes_gen_tables	src/aes.c	/^static void aes_gen_tables( void )$/;"	f	file:
+aes_init_done	src/aes.c	/^static int aes_init_done = 0;$/;"	v	file:
+aes_padlock_ace	src/aes.c	/^static int aes_padlock_ace = -1;$/;"	v	file:
+aes_self_test	src/aes.c	/^int aes_self_test( int verbose )$/;"	f
+aes_setkey_dec	src/aes.c	/^int aes_setkey_dec( aes_context *ctx, const unsigned char *key, unsigned int keysize )$/;"	f
+aes_setkey_enc	src/aes.c	/^int aes_setkey_enc( aes_context *ctx, const unsigned char *key, unsigned int keysize )$/;"	f
+aes_test_cbc_dec	src/aes.c	/^static const unsigned char aes_test_cbc_dec[3][16] =$/;"	v	file:
+aes_test_cbc_enc	src/aes.c	/^static const unsigned char aes_test_cbc_enc[3][16] =$/;"	v	file:
+aes_test_cfb128_ct	src/aes.c	/^static const unsigned char aes_test_cfb128_ct[3][64] =$/;"	v	file:
+aes_test_cfb128_iv	src/aes.c	/^static const unsigned char aes_test_cfb128_iv[16] =$/;"	v	file:
+aes_test_cfb128_key	src/aes.c	/^static const unsigned char aes_test_cfb128_key[3][32] =$/;"	v	file:
+aes_test_cfb128_pt	src/aes.c	/^static const unsigned char aes_test_cfb128_pt[64] =$/;"	v	file:
+aes_test_ctr_ct	src/aes.c	/^static const unsigned char aes_test_ctr_ct[3][48] =$/;"	v	file:
+aes_test_ctr_key	src/aes.c	/^static const unsigned char aes_test_ctr_key[3][16] =$/;"	v	file:
+aes_test_ctr_len	src/aes.c	/^static const int aes_test_ctr_len[3] =$/;"	v	file:
+aes_test_ctr_nonce_counter	src/aes.c	/^static const unsigned char aes_test_ctr_nonce_counter[3][16] =$/;"	v	file:
+aes_test_ctr_pt	src/aes.c	/^static const unsigned char aes_test_ctr_pt[3][48] =$/;"	v	file:
+aes_test_ecb_dec	src/aes.c	/^static const unsigned char aes_test_ecb_dec[3][16] =$/;"	v	file:
+aes_test_ecb_enc	src/aes.c	/^static const unsigned char aes_test_ecb_enc[3][16] =$/;"	v	file:
+all_0	src/input.c	/^void all_0(uchar **input, FILE *data_i, bool file_type, int number, int arr_length)$/;"	f
+all_1	src/input.c	/^void all_1(uchar **input, FILE *data_i, bool file_type, int number, int arr_length)$/;"	f
+balance_counter	src/input.c	/^void balance_counter(uchar **input, FILE *data_i, int test_n,bool file_type,int total_blk)$/;"	f
+base_ectr	include/gcm.h	/^	unsigned char base_ectr[16];\/*!< First ECTR for tag *\/$/;"	m	struct:__anon2
+base_ectr	include/gcm.h	/^	unsigned char base_ectr[16];\/*!< First ECTR for tag *\/$/;"	m	struct:__anon4
+buf	include/aes.h	/^    uint32_t buf[68];           \/*!<  unaligned data    *\/$/;"	m	struct:__anon1
+buf	include/aes.h	/^    uint32_t buf[68];           \/*!<  unaligned data    *\/$/;"	m	struct:__anon3
+buf	include/gcm.h	/^    unsigned char buf[16];      \/*!< buf working value *\/$/;"	m	struct:__anon2
+buf	include/gcm.h	/^    unsigned char buf[16];      \/*!< buf working value *\/$/;"	m	struct:__anon4
+cipher	src/cipher.c	/^void cipher(aes_context ctx,uchar **dst, uchar ** src, FILE *cipher_o, bool file_type)$/;"	f
+cipher_short	src/cipher.c	/^void cipher_short(aes_context ctx,uchar **dst, uchar ** src, FILE *cipher_o,bool file_type)$/;"	f
+ciphertext_dir	src/run.c	28;"	d	file:
+ciphertext_dir_txt	src/run.c	31;"	d	file:
+complex_count	src/input.c	/^void complex_count(uchar **input, int test_n, FILE *data_i,bool file_type,uint *random)$/;"	f
+count	src/input.c	/^void count(uchar **input, int test_n, FILE *data_i, bool file_type)$/;"	f
+ct	src/gcm.c	/^unsigned char ct[MAX_TESTS * 3][64] =$/;"	v
+data_dir	src/run.c	27;"	d	file:
+data_dir_txt	src/run.c	30;"	d	file:
+equal_input	src/input.c	/^void equal_input(uchar **input, FILE *data_i, bool file_type)$/;"	f
+gcm_context	include/gcm.h	/^gcm_context;$/;"	t	typeref:struct:__anon2
+gcm_context	include/gcm.h	/^gcm_context;$/;"	t	typeref:struct:__anon4
+gcm_crypt_and_tag	src/gcm.c	/^int gcm_crypt_and_tag( gcm_context *ctx,$/;"	f
+gcm_finish	src/gcm.c	/^int gcm_finish( gcm_context *ctx,$/;"	f
+gcm_gen_table	src/gcm.c	/^static int gcm_gen_table( gcm_context *ctx )$/;"	f	file:
+gcm_init	src/gcm.c	/^int gcm_init( gcm_context *ctx, const unsigned char *key,$/;"	f
+gcm_mult	src/gcm.c	/^static void gcm_mult( gcm_context *ctx, const unsigned char x[16],$/;"	f	file:
+gcm_starts	src/gcm.c	/^int gcm_starts( gcm_context *ctx,$/;"	f
+gcm_update	src/gcm.c	/^int gcm_update( gcm_context *ctx,$/;"	f
+int32_t	include/padlock.h	/^typedef INT32 int32_t;$/;"	t
+iv	src/gcm.c	/^unsigned char iv[MAX_TESTS][64] =$/;"	v
+iv_index	src/gcm.c	/^int iv_index[MAX_TESTS] =$/;"	v
+iv_len	src/gcm.c	/^size_t iv_len[MAX_TESTS] =$/;"	v
+key	src/gcm.c	/^unsigned char key[MAX_TESTS][32] =$/;"	v
+key_index	src/gcm.c	/^int key_index[MAX_TESTS] =$/;"	v
+last4	src/gcm.c	/^static const uint64_t last4[16] =$/;"	v	file:
+len	include/gcm.h	/^    uint64_t len;               \/*!< Total data length *\/$/;"	m	struct:__anon2
+len	include/gcm.h	/^    uint64_t len;               \/*!< Total data length *\/$/;"	m	struct:__anon4
+linear_counter	src/input.c	/^void linear_counter(uchar **input, int test_n, bool file_type, FILE *data_i, int number, int arr_length)$/;"	f
+main	src/run.c	/^int main()$/;"	f
+mode	include/gcm.h	/^    int mode;                   \/*!< Encrypt or Decrypt *\/$/;"	m	struct:__anon2
+mode	include/gcm.h	/^    int mode;                   \/*!< Encrypt or Decrypt *\/$/;"	m	struct:__anon4
+nr	include/aes.h	/^    int nr;                     \/*!<  number of rounds  *\/$/;"	m	struct:__anon1
+nr	include/aes.h	/^    int nr;                     \/*!<  number of rounds  *\/$/;"	m	struct:__anon3
+only_plaintext	src/cipher.c	/^void only_plaintext(uchar **dst, const uchar **src, int number, int arr_length, FILE *cipher_o,bool file_type)$/;"	f
+padlock_supports	src/padlock.c	/^int padlock_supports( int feature )$/;"	f
+padlock_xcryptcbc	src/padlock.c	/^int padlock_xcryptcbc( aes_context *ctx,$/;"	f
+padlock_xcryptecb	src/padlock.c	/^int padlock_xcryptecb( aes_context *ctx,$/;"	f
+perodic_cipher	src/cipher.c	/^void perodic_cipher(aes_context ctx,uchar **dst, uchar ** src, FILE *cipher_o,int index,bool file_type)$/;"	f
+perodic_input	src/input.c	/^void perodic_input(uchar **input, FILE *data_i,int index,bool file_type)$/;"	f
+pt	src/gcm.c	/^unsigned char pt[MAX_TESTS][64] =$/;"	v
+pt_index	src/gcm.c	/^int pt_index[MAX_TESTS] =$/;"	v
+pt_len	src/gcm.c	/^size_t pt_len[MAX_TESTS] =$/;"	v
+random_input	src/input.c	/^void random_input(uchar **input, const uchar **rnd,FILE *data_i, bool file_type, int number, int arr_length)$/;"	f
+random_repeat_long	src/input.c	/^void random_repeat_long(uchar **input, const uchar *rnd,FILE *data_i,  bool file_type, int number, int arr_length)$/;"	f
+random_repeat_short	src/input.c	/^void random_repeat_short(uchar **input, FILE *data_i, int rand_num, bool file_type)$/;"	f
+rk	include/aes.h	/^    uint32_t *rk;               \/*!<  AES round keys    *\/$/;"	m	struct:__anon1
+rk	include/aes.h	/^    uint32_t *rk;               \/*!<  AES round keys    *\/$/;"	m	struct:__anon3
+show	src/show.c	/^void show(const void *object, size_t size)$/;"	f
+tag	src/gcm.c	/^unsigned char tag[MAX_TESTS * 3][16] =$/;"	v
+tag_GMAC_dir	include/GMAC.h	20;"	d
+tag_GMAC_dir_txt	include/GMAC.h	25;"	d
+uchar	include/config.h	13;"	d
+uint	include/config.h	15;"	d
+uint32_t	include/aes.h	/^typedef UINT32 uint32_t;$/;"	t
+uint32_t	include/gcm.h	/^typedef UINT32 uint32_t;$/;"	t
+uint64_t	include/gcm.h	/^typedef UINT64 uint64_t;$/;"	t
+ushort	include/config.h	14;"	d
+write_csv_1array	src/write_csv.c	/^void write_csv_1array(FILE *dst, int length, uchar *array)$/;"	f
+write_csv_2array	src/write_csv.c	/^void write_csv_2array(FILE *dst, int number, int length, uchar **array)$/;"	f
+write_csv_2array2	src/write_csv.c	/^void write_csv_2array2(FILE *dst, int num, int len, uchar *array)$/;"	f
+write_txt_1array	src/write_txt.c	/^void write_txt_1array(FILE *dst,  int length, const uchar *array)$/;"	f
+write_txt_2array	src/write_txt.c	/^void write_txt_2array(FILE *dst, int number, int length, const uchar **array)$/;"	f
+write_txt_2array2	src/write_txt.c	/^void write_txt_2array2(FILE *dst, int num, int len, const uchar *array)$/;"	f
+y	include/gcm.h	/^    unsigned char y[16];        \/*!< Y working value *\/$/;"	m	struct:__anon2
+y	include/gcm.h	/^    unsigned char y[16];        \/*!< Y working value *\/$/;"	m	struct:__anon4
+y_dir_split_csv	include/GMAC.h	19;"	d
+y_dir_split_txt	include/GMAC.h	24;"	d
