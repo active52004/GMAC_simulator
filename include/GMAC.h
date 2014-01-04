@@ -9,10 +9,9 @@
 \param FILE *tag
 \param bool file_type
 */
-#define GMAC_BLK_NUMBER 1
+#define GMAC_BLK_NUMBER 2
 #define IV_LENGTH 12
 #define INPUT_LENGTH 16
-#define TAG_SIZE 4
 
 //#define iv_dir "../NIST_suite/long/iv%d.csv"
 #define B_dir "../NIST_suite/long/B%d.csv"

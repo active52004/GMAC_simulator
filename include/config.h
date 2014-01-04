@@ -14,7 +14,7 @@
 #define ushort unsigned short
 #define uint unsigned int
 
-#define BLK_NUMBER 1
+#define BLK_NUMBER 2
 #define BLK_LENGTH 16
 #define CSV_file false
 #define TXT_file true

@@ -25,7 +25,7 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
  	uchar *B=(uchar *)malloc(sizeof(uchar)*INPUT_LENGTH); 
 	memset(B,0,sizeof(B));
 
-	uchar *tag=(uchar *)malloc(sizeof(uchar)*TAG_SIZE);
+	uchar *tag=(uchar *)malloc(sizeof(uchar)*TAG_LENGTH);
 	memset(tag,0,sizeof(tag));
 
  	gcm_crypt_and_tag(ctx,GCM_ENCRYPT,
@@ -33,7 +33,7 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
 			iv,sizeof(iv),
 			tmp_input,	
 			Y,
-			TAG_SIZE,tag
+			TAG_LENGTH,tag
 			);
   
 	for(int i=0;i<INPUT_LENGTH;i++)
@@ -73,11 +73,11 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
 
 	if(file_type == TXT_file)
 	{
-		write_txt_1array(gmac_tag,TAG_SIZE,tag);
+		write_txt_1array(gmac_tag,TAG_LENGTH,tag);
 	}
 	else 
 	{
-		write_csv_1array(gmac_tag,TAG_SIZE,tag);
+		write_csv_1array(gmac_tag,TAG_LENGTH,tag);
 	}
 
 	free(Y);
