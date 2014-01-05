@@ -15,7 +15,8 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
 
 	for(int i=0;i<GMAC_BLK_NUMBER*INPUT_LENGTH;i++)
 	{
-		*(tmp_input+i)= input[i/INPUT_LENGTH][i%INPUT_LENGTH];
+		uchar x = i-(i/INPUT_LENGTH)*INPUT_LENGTH;
+		*(tmp_input+i)= input[i/INPUT_LENGTH][x];
 	}
 
 	//Y blocks 
@@ -35,18 +36,12 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
 			Y,
 			TAG_LENGTH,tag
 			);
-  
-	for(int i=0;i<INPUT_LENGTH;i++)
-	{
-		B[i]=ctx->buf[i];
-	}
-	//Y blocks are stored at long array Y
-	//B stores B block
-	//Tag stores the tag
-  /*
+
+/*
    split Y array to Y blocks and store in Y files
-   */	
-	uchar *i_p=Y;
+   */
+	//Y blocks are stored at long array Y
+  uchar *i_p=Y;
 	int j=0;
 	while(j<GMAC_BLK_NUMBER)
 	{
@@ -61,7 +56,11 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
 		j++;
 		i_p += INPUT_LENGTH;
 	}
-
+	for(int i=0;i<INPUT_LENGTH;i++)
+	{
+		B[i]=ctx->buf[i];
+	}
+	//B stores B block
 	if(file_type == TXT_file)
 	{
 		write_txt_1array(gmac_b,INPUT_LENGTH,B);
@@ -71,6 +70,7 @@ void GMAC_generator(const uchar **input, uchar *iv, gcm_context *ctx, FILE *gmac
 		write_csv_1array(gmac_b,INPUT_LENGTH,B);
 	}
 
+	//Tag stores the tag
 	if(file_type == TXT_file)
 	{
 		write_txt_1array(gmac_tag,TAG_LENGTH,tag);

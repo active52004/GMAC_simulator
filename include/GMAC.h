@@ -9,7 +9,7 @@
 \param FILE *tag
 \param bool file_type
 */
-#define GMAC_BLK_NUMBER 2
+#define GMAC_BLK_NUMBER 1
 #define IV_LENGTH 12
 #define INPUT_LENGTH 16
 
